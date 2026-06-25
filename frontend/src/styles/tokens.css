@@ -1,0 +1,47 @@
+:root {
+  /* Neutral Color Scale derived from Ink (#f4f4f5) and Paper (#09090b) */
+  --neutral-50: #fafafa;
+  --neutral-100: #f4f4f5;
+  --neutral-200: #e4e4e7;
+  --neutral-300: #d4d4d8;
+  --neutral-400: #a1a1aa;
+  --neutral-500: #71717a;
+  --neutral-600: #52525b;
+  --neutral-700: #3f3f46;
+  --neutral-800: #27272a;
+  --neutral-900: #18181b;
+  --neutral-950: #09090b;
+
+  /* Primary Theme Tokens from Design Brief */
+  --paper: #09090b;
+  --ink: #f4f4f5;
+  --side-for: #1b4d3e;          /* Pine Green */
+  --side-for-light: #2d6a4f;    /* Light Pine Green for highlights */
+  --side-against: #8b3a1a;      /* Burnt Sienna */
+  --side-against-light: #a34e2c;/* Light Burnt Sienna for highlights */
+  --divider-neutral: #27272a;
+  --verdict-gold: #d4af37;      /* Verdict Gold */
+  --error-red: #ef4444;
+
+  /* Elevation & Glassmorphism Tokens (Box Shadows and Borders) */
+  --elevation-1: 0 1px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  --elevation-2: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  --elevation-3: 0 10px 15px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -2px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+
+  /* Motion & Animation Tokens */
+  --duration-fast: 120ms;
+  --duration-base: 240ms;
+  --duration-slow: 400ms;
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-emphasized: cubic-bezier(0.3, 0, 0, 1);
+
+  /* Spacing Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+}

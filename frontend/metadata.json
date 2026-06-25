@@ -1,0 +1,6 @@
+{
+  "name": "Debate Arena",
+  "description": "AI-powered multi-LLM debate platform with interactive courtroom visualization, live scoring, fact-checking, bias auditing, and multi-perspective judging.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
