@@ -51,7 +51,7 @@ export default function AnalyticsView({ onBack }: AnalyticsViewProps) {
     setLoading(true);
     setError('');
     try {
-      const res = await fetch('/debate/analytics');
+      const res = await fetch('https://debate-arena-backend-production-13eb.up.railway.app/debate/analytics');
       if (!res.ok) {
         throw new Error('Failed to load analytics data.');
       }
