@@ -320,11 +320,11 @@ export default function LiveDebateView({
               <h3 className="font-sans text-xs font-bold text-zinc-100">Live Argument Momentum Graph</h3>
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-1.5">
-                  <span className="h-2 w-2 rounded-full" style={{ backgroundColor: '#2d6a4f' }} />
+                  <span className="h-2 w-2 rounded-full" style={{ backgroundColor: '#3b82f6' }} />
                   <span className="font-mono text-[9px] text-zinc-300">Side A (FOR)</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <span className="h-2 w-2 rounded-full" style={{ backgroundColor: '#a34e2c' }} />
+                  <span className="h-2 w-2 rounded-full" style={{ backgroundColor: '#a855f7' }} />
                   <span className="font-mono text-[9px] text-zinc-300">Side B (AGAINST)</span>
                 </div>
               </div>

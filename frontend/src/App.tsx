@@ -306,17 +306,17 @@ export default function App() {
               animate={showIntro && !introExiting ? { opacity: 0, scale: 0.95 } : { opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, ease: 'easeInOut' }}
               exit={{ opacity: 0, y: -10 }}
-              className="flex-1 overflow-y-auto p-4 md:p-12 flex flex-col items-center justify-center space-y-8 select-none relative"
+              className="flex-1 overflow-y-auto pt-25 pb-20 md:px-20 flex flex-col items-center justify-center space-y-8 select-none relative"
             >
               {/* Background gradient glow */}
               <div className="absolute -right-20 -bottom-20 w-80 h-80 accent-gradient rounded-full blur-[120px] opacity-15 pointer-events-none" />
               <div className="absolute -left-20 -top-20 w-80 h-80 bg-blue-500 rounded-full blur-[120px] opacity-10 pointer-events-none" />
 
-              {/* Central Glowing Gavel Emblem */}
+              {/* Central Glowing Scale Emblem */}
               <div className="text-center space-y-3 max-w-xl relative z-10">
-                <div className="flex justify-center">
+                <div className="flex justify-center mt-140">
                   <div className="h-16 w-16 rounded-3xl bg-zinc-900 border border-zinc-800 shadow-xl flex items-center justify-center text-white relative">
-                    <Gavel className="w-8 h-8 rotate-45 text-blue-400" />
+                    <Scale className="w-8 h-8 text-blue-400" />
                     <Sparkles className="absolute -top-1 -right-1 w-4 h-4 text-purple-400 animate-pulse" />
                   </div>
                 </div>
@@ -331,37 +331,94 @@ export default function App() {
               {/* Central Interactive Control Card (Premium Bento Grid style) */}
               <div 
                 id="search-control-card"
-                className="w-full max-w-2xl bento-card p-6 space-y-6 shadow-2xl relative z-10 border border-zinc-800 bg-zinc-900/60 backdrop-blur-md"
-              >
-                {/* 3 columns highlighting presets like the video */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                  <div className="p-3 bg-zinc-900/40 rounded-xl border border-zinc-800 flex flex-col items-start space-y-1.5 hover:border-zinc-700 transition-colors">
-                    <BookOpen className="w-4 h-4 text-blue-400" />
-                    <h4 className="font-sans text-xs font-bold text-zinc-200">Saved Debate Pre-sets</h4>
-                    <p className="text-[10px] text-zinc-500 leading-normal">Load fully articulated historical debates with high fidelity transcripts.</p>
-                  </div>
+                className="w-full max-w-4xl space-y-6 relative z-10"
+              ></div>
+<div className="rounded-3xl border border-zinc-800 bg-zinc-900/60 backdrop-blur-md p-8">
+                {/* 6 Feature Cards */}
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
 
-                  <div className="p-3 bg-zinc-900/40 rounded-xl border border-zinc-800 flex flex-col items-start space-y-1.5 hover:border-zinc-700 transition-colors">
-                    <Settings className="w-4 h-4 text-purple-400" />
-                    <h4 className="font-sans text-xs font-bold text-zinc-200">Tone Tuning</h4>
-                    <p className="text-[10px] text-zinc-500 leading-normal">Switch orchestrator tone from strict legal debate to casual banter.</p>
-                  </div>
+  {/* Card 1 */}
+  <div className="p-4 bg-zinc-900/40 rounded-xl border border-zinc-800 flex flex-col items-start space-y-2 hover:border-zinc-700 transition-colors">
+    <BookOpen className="w-5 h-5 text-blue-400" />
+    <h4 className="font-sans text-xl font-bold text-zinc-200">
+      Debate Library
+    </h4>
+    <p className="text-base text-zinc-500 leading-relaxed">
+      Browse saved debates and replay previous discussions anytime.
+    </p>
+  </div>
 
-                  <div className="p-3 bg-zinc-900/40 rounded-xl border border-zinc-800 flex flex-col items-start space-y-1.5 hover:border-zinc-700 transition-colors">
-                    <Scale className="w-4 h-4 text-pink-400" />
-                    <h4 className="font-sans text-xs font-bold text-zinc-200">Single Engine</h4>
-                    <p className="text-[10px] text-zinc-500 leading-normal">Gemini 3.1 Flash Lite powers both opposing podiums and presides as the judge.</p>
-                  </div>
-                </div>
+  {/* Card 2 */}
+  <div className="p-4 bg-zinc-900/40 rounded-xl border border-zinc-800 flex flex-col items-start space-y-2 hover:border-zinc-700 transition-colors">
+    <Settings className="w-5 h-5 text-purple-400" />
+    <h4 className="font-sans text-xl font-bold text-zinc-200">
+      AI Configuration
+    </h4>
+    <p className="text-base text-zinc-500 leading-relaxed">
+      Customize debate rounds, AI models and courtroom tone.
+    </p>
+  </div>
+
+  {/* Card 3 */}
+  <div className="p-4 bg-zinc-900/40 rounded-xl border border-zinc-800 flex flex-col items-start space-y-2 hover:border-zinc-700 transition-colors">
+    <Scale className="w-5 h-5 text-pink-400" />
+    <h4 className="font-sans text-xl font-bold text-zinc-200">
+      AI Judge
+    </h4>
+    <p className="text-base text-zinc-500 leading-relaxed">
+      Receive an unbiased verdict with detailed reasoning and scoring.
+    </p>
+  </div>
+
+  {/* Card 4 */}
+  <div className="p-4 bg-zinc-900/40 rounded-xl border border-zinc-800 flex flex-col items-start space-y-2 hover:border-zinc-700 transition-colors">
+    <Sparkles className="w-5 h-5 text-yellow-400" />
+    <h4 className="font-sans text-xl font-bold text-zinc-200">
+      Trending Topics
+    </h4>
+    <p className="text-base text-zinc-500 leading-relaxed">
+      Instantly debate today's most discussed technology and policy topics.
+    </p>
+  </div>
+
+  {/* Card 5 */}
+  <div className="p-4 bg-zinc-900/40 rounded-xl border border-zinc-800 flex flex-col items-start space-y-2 hover:border-zinc-700 transition-colors">
+    <MessageSquare className="w-5 h-5 text-emerald-400" />
+    <h4 className="font-sans text-xl font-bold text-zinc-200">
+      Live Debate
+    </h4>
+    <p className="text-base text-zinc-500 leading-relaxed">
+      Watch two AI agents debate live with structured reasoning.
+    </p>
+  </div>
+
+  {/* Card 6 */}
+  <div className="p-4 bg-zinc-900/40 rounded-xl border border-zinc-800 flex flex-col items-start space-y-2 hover:border-zinc-700 transition-colors">
+    <Compass className="w-5 h-5 text-cyan-400" />
+    <h4 className="font-sans text-xl font-bold text-zinc-200">
+      Random Motion
+    </h4>
+    <p className="text-base text-zinc-500 leading-relaxed">
+      Generate a unique debate topic instantly with one click.
+    </p>
+   </div>
+
+</div>   {/* closes grid */}
+
+</div>   {/* closes Box 1 */}
+
+
+
+            <div className="rounded-3xl border border-zinc-800 bg-zinc-900/60 backdrop-blur-md p-8 space-y-8">
 
                 {/* Search query recommendations categories filter */}
-                <div className="flex bg-zinc-950 p-0.5 rounded-lg border border-zinc-800 max-w-sm overflow-x-auto scrollbar-none">
+                <div className="flex bg-zinc-950 p-3.0 rounded-xl border border-zinc-800 max-w-xl overflow-x-auto scrollbar-none">
                   {Object.keys(categoryTemplates).map((cat) => (
                     <button
                       key={cat}
                       id={`home-cat-filter-${cat}`}
                       onClick={() => setHomeTemplateCategory(cat)}
-                      className={`flex-1 py-1.5 px-3 text-[10px] font-bold rounded-md transition-all cursor-pointer whitespace-nowrap ${
+                      className={`flex-1 py-0.5 px-3 text-lg font-bold rounded-md transition-all cursor-pointer whitespace-nowrap ${
                         homeTemplateCategory === cat 
                           ? 'accent-gradient text-white shadow-md' 
                           : 'text-zinc-400 hover:text-white'
@@ -373,7 +430,7 @@ export default function App() {
                 </div>
 
                 {/* Suggested template cards list based on selected filter */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-2">
                   {getRotatedTemplates(homeTemplateCategory).map((tmpl, idx) => (
                     <button
                       key={idx}
@@ -382,32 +439,32 @@ export default function App() {
                         setQuestionText(tmpl.question);
                         setInputError('');
                       }}
-                      className="p-3.5 rounded-xl border border-zinc-800/80 hover:border-zinc-700 bg-zinc-900/20 hover:bg-zinc-900/60 text-left text-xs transition-all flex flex-col justify-between group cursor-pointer"
+                      className="p-6 rounded-xl border border-zinc-800/80 hover:border-zinc-700 bg-zinc-900/20 hover:bg-zinc-900/60 text-left text-xs transition-all flex flex-col justify-between group cursor-pointer"
                     >
                       <div>
-                        <span className="font-mono text-[9px] text-blue-400 font-bold uppercase tracking-wider mb-1 block">Template Suggestion</span>
-                        <h4 className="font-sans font-bold text-zinc-100 group-hover:text-blue-300">{tmpl.title}</h4>
-                        <p className="text-[10px] text-zinc-500 mt-1 leading-normal">{tmpl.desc}</p>
+                        <span className="font-mono text-base md:text-lg text-blue-400 font-bold uppercase tracking-wider mb-2 block">Template Suggestion</span>
+                        <h4 className="font-sans text-xl font-bold text-zinc-100 group-hover:text-blue-300">{tmpl.title}</h4>
+                        <p className="text-lg text-zinc-500 mt-1 leading-normal">{tmpl.desc}</p>
                       </div>
-                      <span className="font-mono text-[9px] text-blue-400 flex items-center gap-1 mt-3 font-semibold group-hover:translate-x-1 transition-transform">
-                        Load Prompt <ArrowUpRight className="w-3 h-3" />
+                      <span className="font-mono text-lg text-blue-400 flex items-center gap-2 mt-4 font-bold group-hover:translate-x-1 transition-transform">
+                        Load Prompt <ArrowUpRight className="w-5 h-5" />
                       </span>
                     </button>
                   ))}
                 </div>
 
                 {/* Question Input form section */}
-                <div className="space-y-2 pt-2 border-t border-zinc-800">
-                  <div className="flex justify-between items-center text-xs">
-                    <label className="font-sans font-bold text-zinc-200">Submit Custom Motion</label>
+                <div className="space-y-8 pt-8 border-t border-zinc-800">
+                  <div className="flex justify-between items-center text-xl">
+                    <label className="font-sans font-bold text-zinc-200">Debate Question</label>
                     {questionText.length > 0 && (
-                      <span className={`font-mono text-[10px] ${questionText.length > 300 ? 'text-rose-500 font-bold' : 'text-zinc-500'}`}>
+                      <span className={`font-mono text-xl ${questionText.length > 300 ? 'text-rose-500 font-bold' : 'text-zinc-500'}`}>
                         {questionText.length}/300 chars
                       </span>
                     )}
                   </div>
 
-                  <div className={`relative flex items-center rounded-xl border p-2 transition-all bg-zinc-950 ${
+                  <div className={`relative flex items-center rounded-xl border p-4 transition-all bg-zinc-950 ${
                     inputError ? 'border-rose-500 ring-1 ring-rose-500/20' : 'border-zinc-800 focus-within:border-zinc-700 focus-within:ring-2 focus-within:ring-blue-500/10'
                   }`}>
                     {/* Left Icon decoration */}
@@ -424,7 +481,7 @@ export default function App() {
                         setQuestionText(e.target.value);
                         if (e.target.value.trim()) setInputError('');
                       }}
-                      className="flex-1 text-xs md:text-sm text-zinc-200 placeholder-zinc-600 focus:outline-none bg-transparent py-2.5 pr-2"
+                      className="flex-1 text-xl md:text-xl text-zinc-200 placeholder:text-zinc-600 focus:outline-none bg-transparent py-4 pr-3"
                       disabled={isStartingDebate}
                     />
 
@@ -436,7 +493,7 @@ export default function App() {
                       className="accent-gradient disabled:bg-zinc-800 text-white p-2.5 rounded-xl transition-all disabled:opacity-50 cursor-pointer shadow-lg active:scale-95 flex items-center justify-center gap-1.5"
                     >
                       {isStartingDebate ? (
-                        <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                        <div className="w-4 h-4 border-2 border-t border-t-transparent rounded-full animate-spin" />
                       ) : (
                         <>
                           <span className="text-xs font-semibold px-1.5">Start Arena</span>
@@ -456,8 +513,9 @@ export default function App() {
                       {inputError}
                     </motion.p>
                   )}
-                </div>
+                 </div>
               </div>
+          
 
             </motion.div>
           )}
