@@ -16,8 +16,6 @@
 
 <br />
 
-<!-- Placeholder for a GIF or screenshot of the app in action -->
-<img src="https://storage.googleapis.com/gemini-studio-project-images/dc14395a-1051-46f1-98a9-d6a1d32b8f7d/Debate_Arena_Showcase.png" alt="Debate Arena Showcase" width="100%" />
 
 </div>
 
