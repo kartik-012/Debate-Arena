@@ -19,7 +19,6 @@
 
 </div>
 
-
 ## 🏛️ Overview
 
 **Debate Arena** is a sophisticated platform that stages live, multi-round debates between multiple AI language models. It moves beyond simple Q&A by creating a dynamic, adversarial environment where AIs challenge, rebut, and respond to each other's arguments in real-time.
