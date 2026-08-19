@@ -6,7 +6,7 @@
     An AI-powered multi-LLM debate platform with 3D courtroom visualization, live scoring, fact-checking, and bias auditing.
   </p>
 
-  <div align="center">
+  <div align="center"> 
     <img src="https://img.shields.io/badge/Python-3.11+-blue.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
     <img src="https://img.shields.io/badge/FastAPI-0.110+-009688.svg?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
     <img src="https://img.shields.io/badge/React-18.2+-61DAFB.svg?style=for-the-badge&logo=react&logoColor=black" alt="React" />
