@@ -1,7 +1,7 @@
 <div align="center">
   <h1 align="center"> 
     Debate Arena
-  </h1>
+  </h1> 
   <p align="center">
     An AI-powered multi-LLM debate platform with 3D courtroom visualization, live scoring, fact-checking, and bias auditing.
   </p>
